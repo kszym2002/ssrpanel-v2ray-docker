@@ -3,7 +3,7 @@
 
 部署命令
 
-docker run -d -v /你的config.json的位置：/root/v2/config.json -v /你的config.properties的位置：/root/v2/config.properties easonsummer / ssrpanel-v2ray-docker
+docker run -d -v /你的config.json的位置:/root/v2/config.json -v /你的config.properties的位置:/root/v2/config.properties --network=host --log-opt max-size=10m --log-opt max-file=3 --restart=always easonsummer/ssrpanel-v2ray-docker
 
 
 
