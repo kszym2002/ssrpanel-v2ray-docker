@@ -1,7 +1,7 @@
 FROM alpine:latest
 MAINTAINER Eason Summer <kszym2002@gmail.com>
 
-# Install cURL
+
 RUN echo -e "https://mirror.tuna.tsinghua.edu.cn/alpine/v3.4/main\n\
 https://mirror.tuna.tsinghua.edu.cn/alpine/v3.4/community" > /etc/apk/repositories
 
