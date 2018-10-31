@@ -26,5 +26,6 @@ docker restart v2ray
 docker stop v2ray
 docker rm v2ray
 ````
-#请把两个配置文件存放在/root目录下,如果你存放在其他目录请修改-v 之后的冒号之前的文件地址.
-#不再需要注意修改config.properties前2项内容,保持默认.
+# 请把两个配置文件存放在/root目录下,如果你存放在其他目录请修改-v 之后的冒号之前的文件地址.
+
+# 不再需要注意修改config.properties前2项内容,保持默认.
