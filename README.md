@@ -2,13 +2,19 @@
 只能用于ssrpanel的v2ray节点部署
 
 更新记录
+
 2018.10.30 第一次构建 ssrpanel-v2ray 版本0.0.2 v2ray 版本 3.50
+
 2018.10.31  重新构建  目录调整与wiki教程一致
 
 准备
+
 细心、仔细、认真
+
 安装docker 可以使用 curl -fsSL get.docker.com | sh 安装最新docker
+
 config.json与config.properties 配置正确
+
 这篇教程假设config.json与config.properties都放置在/root目录下
 
 部署命令
