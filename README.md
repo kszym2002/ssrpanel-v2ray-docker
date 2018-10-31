@@ -3,17 +3,7 @@
 
 部署命令
 ````
-docker run -d -v /你的config.json的位置:/root/v2/config.json -v /你的config.properties的位置:/root/v2/config.properties --network=host --log-opt max-size=10m --log-opt max-file=3 --restart=always easonsummer/ssrpanel-v2ray-docker
+docker run -d -v /root/config.json:/root/v2ray-linux-64/config.json -v /root/config.properties:/root/ssrpanel-v2ray/config.properties --name=v2ray --network=host --log-opt max-size=10m --log-opt max-file=3 --restart=always easonsummer/ssrpanel-v2ray-docker
 ````
-
-# 注意
-config.properties 这些值必须为下方所示 其他都可以随意调节
-````
-v2ray路径
-
-v2ray.path=/root/v2
-
-可执行文件名
-
-v2ray.exec=v2ray
-````
+#请把两个配置文件存放在/root目录下,如果你存放在其他目录请修改-v 之后的冒号之前的文件地址.
+#不再需要注意修改config.properties前2项内容,保持默认.
