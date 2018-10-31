@@ -1,4 +1,3 @@
-# ssrpanel-v2ray-docker
 只能用于ssrpanel的v2ray节点部署
 
 更新记录
@@ -16,6 +15,7 @@
 config.json与config.properties 配置正确
 
 这篇教程假设config.json与config.properties都放置在/root目录下
+
 
 部署命令
 ````
