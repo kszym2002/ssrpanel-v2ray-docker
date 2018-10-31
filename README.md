@@ -3,7 +3,7 @@
 
 部署命令
 ````
-docker run -d -v /root/config.json:/root/v2ray-linux-64/config.json -v /root/config.properties:/root/ssrpanel-v2ray/config.properties --name=v2ray --network=host --log-opt max-size=10m --log-opt max-file=3 --restart=always easonsummer/ssrpanel-v2ray-docker
+docker run -d -v /root/config.json:/root/v2ray-linux-64/config.json -v /root/config.properties:/root/ssrpanel-v2ray/config.properties --name=v2ray --network=host --log-opt max-size=10m --log-opt max-file=3 --restart=always easonsummer/ssrpanel-v2ray-docker:0.0.2
 ````
 
 验证命令
