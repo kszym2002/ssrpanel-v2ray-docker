@@ -1,7 +1,7 @@
 FROM alpine:latest
 MAINTAINER Eason Summer <kszym2002@gmail.com>
 
-ENV V2RAY=4.2
+ENV V2RAY=4.6.5
 ENV SSRPANELV2RAY=0.0.2
 
 
