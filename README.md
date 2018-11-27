@@ -8,6 +8,10 @@
 
 2018.11.09 升级v2ray v4.2 v2ray可以向下兼容数个版本
 
+2018.11.27 升级v2ray v4.6.5 
+   - easonsummer/ssrpanel-v2ray-docker:4.2-0.0.2 (v4.2 v2ray 0.0.2 java后端)
+   - easonsummer/ssrpanel-v2ray-docker:4.6.5-0.0.2 (v4.6.5 v2ray 0.0.2 java后端)
+   
 准备
 
 细心、仔细、认真
