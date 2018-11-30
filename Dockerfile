@@ -1,7 +1,7 @@
 FROM alpine:latest
 MAINTAINER Eason Summer <kszym2002@gmail.com>
 
-ENV V2RAY=4.6.5
+ENV V2RAY=4.7.0
 ENV SSRPANELV2RAY=0.0.2
 
 
@@ -24,6 +24,6 @@ ENV JAVA_HOME /usr/lib/jvm/default-jvm
 ENV PATH ${PATH}:${JAVA_HOME}/bin
 
 CMD   chmod -R a+x /root/ssrpanel-v2ray && \
-       chmod -R a+x /root/v2ray-linux-64   && \
+      chmod -R a+x /root/v2ray-linux-64   && \
       cd /root/ssrpanel-v2ray && \
      java -jar ssrpanel-v2ray-${SSRPANELV2RAY}.jar
