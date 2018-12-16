@@ -2,15 +2,8 @@
 
 更新记录
 
-2018.10.30 第一次构建 ssrpanel-v2ray 版本0.0.2 v2ray 版本 3.50
+2018.12.16 第一次构建 ssrpanel-v2ray 版本0.0.3 v2ray 会自动更新
 
-2018.10.31  重新构建  目录调整与wiki教程一致
-
-2018.11.09 升级v2ray v4.2 v2ray可以向下兼容数个版本
-
-2018.11.27 升级v2ray v4.6.5 
-   - easonsummer/ssrpanel-v2ray-docker:4.2-0.0.2 (v4.2 v2ray 0.0.2 java后端)
-   - easonsummer/ssrpanel-v2ray-docker:4.6.5-0.0.2 (v4.6.5 v2ray 0.0.2 java后端) (默认分支可以不加尾巴)
    
 准备
 
@@ -25,7 +18,7 @@ config.json与config.properties 配置正确
 
 部署命令
 ````
-docker run -d -v /root/config.json:/root/v2ray-linux-64/config.json -v /root/config.properties:/root/ssrpanel-v2ray/config.properties --name=v2ray --network=host --log-opt max-size=10m --log-opt max-file=3 --restart=always easonsummer/ssrpanel-v2ray-docker:0.0.2
+docker run -d -v /root/config.json:/root/ssrpanel-v2ray/config.json -v /root/config.properties:/root/ssrpanel-v2ray/config.properties --name=v2ray --network=host --log-opt max-size=10m --log-opt max-file=3 --restart=always easonsummer/ssrpanel-v2ray-docker:0.0.3
 ````
 
 验证命令
