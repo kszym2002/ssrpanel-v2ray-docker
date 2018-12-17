@@ -9,9 +9,12 @@ ENV PATH /go/bin:$PATH
 
 RUN  mkdir v2ray &&  cd v2ray  && \
      wget https://github.com/ColetteContreras/v2ray-ssrpanel-plugin/releases/download/v0.1-alpha/v2ray-ssrpanel-plugin-linux-64.zip && \
-     unzip v2ray-ssrpanel-plugin-linux-64.zip    && \
-     unzip v2ray-linux-64.zip  && \
+     unzip v2ray-ssrpanel-plugin-linux-64.zip  -d /root/v2ray  && \
+     unzip /root/v2ray/v2ray-linux-64.zip -d /root/v2ray && \
      rm -rf /root/v2ray/v2ray-ssrpanel-plugin-linux-64.zip && \
      rm -rf /root/v2ray/v2ray-linux-64.zip
-	 
+     
+RUN apk add --no-cache tzdata
+ENV TZ=Asia/Shanghai
+
 CMD /root/v2ray/v2ray -plugin
