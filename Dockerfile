@@ -13,5 +13,4 @@ RUN  mkdir v2ray &&  cd v2ray  && \
      unzip v2ray-linux-64.zip
 
 	 
-CMD  cd v2ray   && \
-      ./v2ray -plugin
+CMD /root/v2ray/v2ray -plugin
