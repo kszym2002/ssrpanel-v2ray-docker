@@ -1,4 +1,5 @@
 FROM ubuntu:latest 
+MAINTAINER Eason Summer <kszym2002@gmail.com>
 RUN apt-get update
 RUN apt-get install unzip wget -y
 
