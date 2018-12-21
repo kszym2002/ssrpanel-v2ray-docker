@@ -1,16 +1,8 @@
-只能用于ssrpanel的v2ray节点部署
+v2ray ssrpanel go版
 
 更新记录
-
-2018.10.30 第一次构建 ssrpanel-v2ray 版本0.0.2 v2ray 版本 3.50
-
-2018.10.31  重新构建  目录调整与wiki教程一致
-
-2018.11.09 升级v2ray v4.2 v2ray可以向下兼容数个版本
-
-2018.11.27 升级v2ray v4.6.5 
-   - easonsummer/ssrpanel-v2ray-docker:4.2-0.0.2 (v4.2 v2ray 0.0.2 java后端)
-   - easonsummer/ssrpanel-v2ray-docker:4.6.5-0.0.2 (v4.6.5 v2ray 0.0.2 java后端) (默认分支可以不加尾巴)
+- 2018/12/21
+     - ssrpanel-v2ray go版本 启用新的分支 easonsummer/ssrpanel-v2ray-docker:go
    
 准备
 
@@ -20,12 +12,12 @@
 
 config.json与config.properties 配置正确
 
-这篇教程假设config.json与config.properties都放置在/root目录下
+这篇教程假设config.json在/root 里
 
 
 部署命令
 ````
-docker run -d -v /root/config.json:/root/v2ray-linux-64/config.json -v /root/config.properties:/root/ssrpanel-v2ray/config.properties --name=v2ray --network=host --log-opt max-size=10m --log-opt max-file=3 --restart=always easonsummer/ssrpanel-v2ray-docker:0.0.2
+docker run -d -v /root/config.json:usr/bin/v2ray/config.json --name=v2ray --network=host --log-opt max-size=10m --log-opt max-file=3 --restart=always easonsummer/ssrpanel-v2ray-docker:go
 ````
 
 验证命令
@@ -50,4 +42,3 @@ docker rm v2ray
 ````
 # 请把两个配置文件存放在/root目录下,如果你存放在其他目录请修改-v 之后的冒号之前的文件地址.
 
-# 不再需要注意修改config.properties前2项内容,保持默认.
