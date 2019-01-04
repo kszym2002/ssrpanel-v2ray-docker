@@ -8,4 +8,4 @@ RUN curl -L -s https://raw.githubusercontent.com/ColetteContreras/v2ray-ssrpanel
 
 ENV PATH /usr/bin/v2ray:$PATH
 
-CMD ["v2ray", "-plugin"]
+CMD ["v2ray"]
