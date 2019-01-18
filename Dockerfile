@@ -10,7 +10,8 @@ bash  \
 tzdata \
 curl 
 
-RUN cd /tmp/v2ray \
+RUN mkdir /tmp/v2ray \
+&& cd /tmp/v2ray \
 && curl -L -s https://raw.githubusercontent.com/ColetteContreras/v2ray-ssrpanel-plugin/master/install-release.sh | bash \
 && apk del curl \
 && ln -sf /usr/share/zoneinfo/${TZ} /etc/localtime \
